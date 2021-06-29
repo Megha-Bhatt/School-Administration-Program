@@ -1,0 +1,9 @@
+import csv
+
+def write_into_csv(info_list):
+    with open('student_info.csv','a',newline='') as csv_file:
+        writer=csv.writer(csv_file)
+        if csv_file.tell()==0:
+            writer.writerow(["Name","Age","Contact Number","Email ID"])
+
+        writer.writerow(info_list)

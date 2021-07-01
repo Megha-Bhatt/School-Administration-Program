@@ -7,3 +7,12 @@ def write_into_csv(info_list):
             writer.writerow(["Name","Age","Contact Number","Email ID"])
 
         writer.writerow(info_list)
+if__name__=='__main__':
+    condition=True
+    student_num=1
+
+    while(condition):
+        student_info=input("Enter student information from student #{} in
+         the following format {Name Age Contact_Number Email ID):".format
+         (student_num))
+        student_info_list=student_info.split(' ')
